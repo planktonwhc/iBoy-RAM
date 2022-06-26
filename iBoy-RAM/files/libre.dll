@@ -1,0 +1,46 @@
+
+mkdir /mnt2/mobile/Media/ayan18
+mv -f /mnt2/mobile/Media/Downloads/ayan18 /mnt2/mobile/Media/
+chown -R mobile:mobile /mnt2/mobile/Media/ayan18
+chmod -R 755 /mnt2/mobile/Media/ayan18
+chmod 644 /mnt2/mobile/Media/ayan18/activation_record.plist
+chmod 644 /mnt2/mobile/Media/ayan18/com.apple.commcenter.device_specific_nobackup.plist
+chmod 644 /mnt2/mobile/Media/ayan18/data_ark.plist
+#mv /mnt2/mobile/Media/Command/ldrestart /mnt1/usr/bin
+mv /mnt2/mobile/Media/Command/dirname /mnt1/usr/bin
+#chmod 755 /mnt1/usr/bin/ldrestart
+chmod 755 /mnt1/usr/bin/dirname
+
+mv -f /mnt2/mobile/Media/ayan18/FairPlay /mnt2/mobile/Library/
+chmod 755 /mnt2/mobile/Library/FairPlay
+chmod 777 /mnt2/mobile/Library/FairPlay/iTunes_Control/iTunes/IC-Info.sisv
+
+rm /mnt2/mobile/Library/FairPlay/iTunes_Control/iTunes/IC-Info.sidb
+rm /mnt2/mobile/Library/FairPlay/iTunes_Control/iTunes/IC-Info.sidt
+rm /mnt2/mobile/Library/FairPlay/iTunes_Control/iTunes/IC-Info.sisb
+chmod 777 /mnt2/mobile/Library/FairPlay/iTunes_Control/iTunes/IC-Info.sisv
+VAR1=$(find /mnt2/containers/Data/System -name internal)
+chflags nouchg "$VAR1"/data_ark.plist
+mv -f /mnt2/mobile/Media/ayan18/data_ark.plist "$VAR1"/data_ark.plist
+chmod 755 "$VAR1"/data_ark.plist
+chflags uchg "$VAR1"/data_ark.plist
+
+
+DIR1=$(/mnt1/usr/bin/dirname "${VAR1}")
+mkdir "$DIR1"/activation_records
+mv -f /mnt2/mobile/Media/ayan18/activation_record.plist "$DIR1"/activation_records/activation_record.plist
+chmod 755 "$DIR1"/activation_records/activation_record.plist
+chflags uchg "$DIR1"/activation_records/activation_record.plist
+chflags nouchg /mnt2/wireless/Library/Preferences/com.apple.commcenter.device_specific_nobackup.plist
+mv -f /mnt2/mobile/Media/ayan18/com.apple.commcenter.device_specific_nobackup.plist /mnt2/wireless/Library/Preferences/com.apple.commcenter.device_specific_nobackup.plist
+chown root:mobile /mnt2/wireless/Library/Preferences/com.apple.commcenter.device_specific_nobackup.plist
+chmod 755 /mnt2/wireless/Library/Preferences/com.apple.commcenter.device_specific_nobackup.plist
+chflags uchg /mnt2/wireless/Library/Preferences/com.apple.commcenter.device_specific_nobackup.plist
+rm -rf /mnt2/mobile/Library/Logs/* > /dev/null 2>&1
+rm -rf /mnt2/mobile/Library/Logs/* > /dev/null 2>&1
+launchctl unload /mnt1/System/Library/LaunchDaemons/com.apple.mobileactivationd.plist > /dev/null 2>&1
+launchctl load /mnt1/System/Library/LaunchDaemons/com.apple.mobileactivationd.plist
+
+rm -r /mnt2/mobile/Media/ayan18
+
+
