@@ -51,7 +51,8 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.panel_log = new System.Windows.Forms.Panel();
+            this.txt_info = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -59,9 +60,10 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(12, 316);
+            this.progressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.progressBar1.Location = new System.Drawing.Point(0, 325);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(618, 10);
+            this.progressBar1.Size = new System.Drawing.Size(686, 10);
             this.progressBar1.TabIndex = 0;
             // 
             // groupBox1
@@ -76,9 +78,10 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txt_model);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(300, 146);
+            this.groupBox1.Size = new System.Drawing.Size(300, 117);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "iDevice Info";
@@ -86,17 +89,18 @@
             // txt_mode
             // 
             this.txt_mode.AutoSize = true;
-            this.txt_mode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mode.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_mode.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_mode.Location = new System.Drawing.Point(206, 63);
             this.txt_mode.Name = "txt_mode";
-            this.txt_mode.Size = new System.Drawing.Size(32, 13);
+            this.txt_mode.Size = new System.Drawing.Size(29, 13);
             this.txt_mode.TabIndex = 9;
             this.txt_mode.Text = "DFU";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(160, 63);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 13);
@@ -106,17 +110,18 @@
             // txt_status
             // 
             this.txt_status.AutoSize = true;
-            this.txt_status.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_status.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_status.ForeColor = System.Drawing.Color.Lime;
             this.txt_status.Location = new System.Drawing.Point(206, 36);
             this.txt_status.Name = "txt_status";
-            this.txt_status.Size = new System.Drawing.Size(87, 13);
+            this.txt_status.Size = new System.Drawing.Size(76, 13);
             this.txt_status.TabIndex = 7;
             this.txt_status.Text = "REGISTERED";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(160, 36);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(46, 13);
@@ -126,6 +131,7 @@
             // txt_Type
             // 
             this.txt_Type.AutoSize = true;
+            this.txt_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Type.Location = new System.Drawing.Point(54, 88);
             this.txt_Type.Name = "txt_Type";
             this.txt_Type.Size = new System.Drawing.Size(48, 13);
@@ -135,6 +141,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(7, 88);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 13);
@@ -144,6 +151,7 @@
             // txt_ECID
             // 
             this.txt_ECID.AutoSize = true;
+            this.txt_ECID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ECID.Location = new System.Drawing.Point(54, 63);
             this.txt_ECID.Name = "txt_ECID";
             this.txt_ECID.Size = new System.Drawing.Size(49, 13);
@@ -153,6 +161,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(7, 63);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 13);
@@ -162,6 +171,7 @@
             // txt_model
             // 
             this.txt_model.AutoSize = true;
+            this.txt_model.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_model.Location = new System.Drawing.Point(54, 36);
             this.txt_model.Name = "txt_model";
             this.txt_model.Size = new System.Drawing.Size(52, 13);
@@ -171,6 +181,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(7, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 13);
@@ -183,7 +194,8 @@
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Location = new System.Drawing.Point(12, 164);
+            this.groupBox2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(12, 134);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(147, 146);
             this.groupBox2.TabIndex = 2;
@@ -233,7 +245,8 @@
             this.groupBox3.Controls.Add(this.button6);
             this.groupBox3.Controls.Add(this.button7);
             this.groupBox3.Controls.Add(this.button8);
-            this.groupBox3.Location = new System.Drawing.Point(165, 164);
+            this.groupBox3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(165, 134);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(147, 146);
             this.groupBox3.TabIndex = 8;
@@ -276,13 +289,25 @@
             this.button8.Text = "Fix Notification";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // panel_log
+            // txt_info
             // 
-            this.panel_log.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel_log.Location = new System.Drawing.Point(319, 18);
-            this.panel_log.Name = "panel_log";
-            this.panel_log.Size = new System.Drawing.Size(310, 289);
-            this.panel_log.TabIndex = 9;
+            this.txt_info.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txt_info.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_info.Location = new System.Drawing.Point(0, 302);
+            this.txt_info.Name = "txt_info";
+            this.txt_info.Size = new System.Drawing.Size(686, 23);
+            this.txt_info.TabIndex = 9;
+            this.txt_info.Text = "INFO HERE";
+            this.txt_info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.richTextBox1.Location = new System.Drawing.Point(319, 22);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(355, 258);
+            this.richTextBox1.TabIndex = 10;
+            this.richTextBox1.Text = "";
             // 
             // iBoy
             // 
@@ -290,8 +315,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(640, 335);
-            this.Controls.Add(this.panel_log);
+            this.ClientSize = new System.Drawing.Size(686, 335);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.txt_info);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -323,7 +349,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Panel panel_log;
         private System.Windows.Forms.Label txt_ECID;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label txt_model;
@@ -334,6 +359,8 @@
         private System.Windows.Forms.Label txt_status;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label txt_mode;
+        private System.Windows.Forms.Label txt_info;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 

@@ -16,28 +16,52 @@ namespace iBoy_RAM
         public iBoy()
         {
             InitializeComponent();
-        }
+            txt_ECID.Text = "";
+            txt_mode.Text = "";
+            txt_model.Text = "";
+            txt_status.Text = "";
+            txt_Type.Text = "";
+            progressBar1.Value = 0;
+            txt_info.Text = "";
 
+        }
         private void check_device(object sender, EventArgs e)
         {
-			using (Process process = new Process())
-			{
-				process.StartInfo.FileName = Environment.CurrentDirectory + "/files/irecovery.exe";
-				process.StartInfo.Arguments = "-q";
-				process.StartInfo.UseShellExecute = false;
-				process.StartInfo.RedirectStandardOutput = true;
-				process.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-				process.StartInfo.CreateNoWindow = true;
-				process.Start();
-				Text = process.StandardOutput.ReadToEnd();
-				process.WaitForExit();
-			}
-			if (Text.Contains("Error"))
-			{
-				MessageBox.Show("Please unlock your device and press Trust !", "NOT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-			}
-			
-			
-		}
+            getIdeviceInfo();
+        }
+
+        string path = Environment.CurrentDirectory;
+        public void getIdeviceInfo()
+        {
+            //process identify
+            progressBar1.Value = 0;
+            ProcessStartInfo ideviceinfo = new ProcessStartInfo();
+            ideviceinfo.FileName = path + "/files/irecovery.exe";
+            ideviceinfo.Arguments = "-q";
+            ideviceinfo.UseShellExecute = false;
+            ideviceinfo.CreateNoWindow = true;    
+            ideviceinfo.RedirectStandardOutput = true;
+            ideviceinfo.RedirectStandardError = true;
+
+            //start process
+            using (Process exeProcess = Process.Start(ideviceinfo))
+            {
+                exeProcess.WaitForExit();
+                progressBar1.Value = 100;
+                var exitCode = exeProcess.ExitCode;
+                var output = exeProcess.StandardOutput.ReadToEnd();
+                var error = exeProcess.StandardError.ReadToEnd();
+
+                if (output.Length > 0)
+                {
+                    txt_info.Text = "Device Connected in DFU Mode";
+                    richTextBox1.Text = output;
+                } else
+                {
+                    txt_info.Text = "No Device Detected, Please check Driver/Cable";
+                    richTextBox1.Text = error;
+                }
+            }
+        }
     }
 }
