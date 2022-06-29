@@ -30,17 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(iBoy));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_mode = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txt_status = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txt_Type = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt_ECID = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_model = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_checkdev = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -53,9 +42,28 @@
             this.button8 = new System.Windows.Forms.Button();
             this.txt_info = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.groupBox1.SuspendLayout();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.btn_checkSSH = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_model = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_ECID = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_Type = new System.Windows.Forms.Label();
+            this.txt_status = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_mode = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_CPID = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // progressBar1
@@ -65,128 +73,6 @@
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(686, 10);
             this.progressBar1.TabIndex = 0;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txt_mode);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txt_status);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.txt_Type);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.txt_ECID);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txt_model);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(300, 117);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "iDevice Info";
-            // 
-            // txt_mode
-            // 
-            this.txt_mode.AutoSize = true;
-            this.txt_mode.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mode.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_mode.Location = new System.Drawing.Point(206, 63);
-            this.txt_mode.Name = "txt_mode";
-            this.txt_mode.Size = new System.Drawing.Size(29, 13);
-            this.txt_mode.TabIndex = 9;
-            this.txt_mode.Text = "DFU";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(160, 63);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 13);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "MODE :";
-            // 
-            // txt_status
-            // 
-            this.txt_status.AutoSize = true;
-            this.txt_status.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_status.ForeColor = System.Drawing.Color.Lime;
-            this.txt_status.Location = new System.Drawing.Point(206, 36);
-            this.txt_status.Name = "txt_status";
-            this.txt_status.Size = new System.Drawing.Size(76, 13);
-            this.txt_status.TabIndex = 7;
-            this.txt_status.Text = "REGISTERED";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(160, 36);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 13);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Status  :";
-            // 
-            // txt_Type
-            // 
-            this.txt_Type.AutoSize = true;
-            this.txt_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Type.Location = new System.Drawing.Point(54, 88);
-            this.txt_Type.Name = "txt_Type";
-            this.txt_Type.Size = new System.Drawing.Size(48, 13);
-            this.txt_Type.TabIndex = 5;
-            this.txt_Type.Text = "txt_Type";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(7, 88);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Type  :";
-            // 
-            // txt_ECID
-            // 
-            this.txt_ECID.AutoSize = true;
-            this.txt_ECID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ECID.Location = new System.Drawing.Point(54, 63);
-            this.txt_ECID.Name = "txt_ECID";
-            this.txt_ECID.Size = new System.Drawing.Size(49, 13);
-            this.txt_ECID.TabIndex = 3;
-            this.txt_ECID.Text = "txt_ECID";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 63);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "ECID  :";
-            // 
-            // txt_model
-            // 
-            this.txt_model.AutoSize = true;
-            this.txt_model.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_model.Location = new System.Drawing.Point(54, 36);
-            this.txt_model.Name = "txt_model";
-            this.txt_model.Size = new System.Drawing.Size(52, 13);
-            this.txt_model.TabIndex = 1;
-            this.txt_model.Text = "txt_model";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Model  :";
             // 
             // groupBox2
             // 
@@ -245,7 +131,7 @@
             this.groupBox3.Controls.Add(this.button6);
             this.groupBox3.Controls.Add(this.button7);
             this.groupBox3.Controls.Add(this.button8);
-            this.groupBox3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(165, 134);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(147, 146);
@@ -255,6 +141,7 @@
             // 
             // button5
             // 
+            this.button5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(10, 28);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(130, 23);
@@ -264,6 +151,7 @@
             // 
             // button6
             // 
+            this.button6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(10, 57);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(130, 23);
@@ -273,6 +161,7 @@
             // 
             // button7
             // 
+            this.button7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(10, 86);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(130, 23);
@@ -282,6 +171,7 @@
             // 
             // button8
             // 
+            this.button8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(10, 115);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(130, 23);
@@ -293,9 +183,9 @@
             // 
             this.txt_info.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txt_info.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_info.Location = new System.Drawing.Point(0, 302);
+            this.txt_info.Location = new System.Drawing.Point(0, 307);
             this.txt_info.Name = "txt_info";
-            this.txt_info.Size = new System.Drawing.Size(686, 23);
+            this.txt_info.Size = new System.Drawing.Size(686, 18);
             this.txt_info.TabIndex = 9;
             this.txt_info.Text = "INFO HERE";
             this.txt_info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -309,6 +199,206 @@
             this.richTextBox1.TabIndex = 10;
             this.richTextBox1.Text = "";
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.button1);
+            this.groupBox4.Controls.Add(this.button9);
+            this.groupBox4.Controls.Add(this.button10);
+            this.groupBox4.Controls.Add(this.btn_checkSSH);
+            this.groupBox4.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(12, 134);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(147, 146);
+            this.groupBox4.TabIndex = 2;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Ramdisk Menu";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(10, 28);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Check Device (DFU)";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.check_device);
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(10, 57);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(130, 23);
+            this.button9.TabIndex = 5;
+            this.button9.Text = "BOOT 1";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(10, 86);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(130, 23);
+            this.button10.TabIndex = 6;
+            this.button10.Text = "BOOT 2";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // btn_checkSSH
+            // 
+            this.btn_checkSSH.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_checkSSH.Location = new System.Drawing.Point(10, 115);
+            this.btn_checkSSH.Name = "btn_checkSSH";
+            this.btn_checkSSH.Size = new System.Drawing.Size(130, 23);
+            this.btn_checkSSH.TabIndex = 7;
+            this.btn_checkSSH.Text = "Check SSH";
+            this.btn_checkSSH.UseVisualStyleBackColor = true;
+            this.btn_checkSSH.Click += new System.EventHandler(this.ssh_check);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(7, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Model  :";
+            // 
+            // txt_model
+            // 
+            this.txt_model.AutoSize = true;
+            this.txt_model.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_model.Location = new System.Drawing.Point(54, 36);
+            this.txt_model.Name = "txt_model";
+            this.txt_model.Size = new System.Drawing.Size(52, 13);
+            this.txt_model.TabIndex = 1;
+            this.txt_model.Text = "txt_model";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(7, 63);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "ECID    :";
+            // 
+            // txt_ECID
+            // 
+            this.txt_ECID.AutoSize = true;
+            this.txt_ECID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ECID.Location = new System.Drawing.Point(54, 63);
+            this.txt_ECID.Name = "txt_ECID";
+            this.txt_ECID.Size = new System.Drawing.Size(49, 13);
+            this.txt_ECID.TabIndex = 3;
+            this.txt_ECID.Text = "txt_ECID";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(190, 36);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 13);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Type  :";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(7, 88);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(54, 13);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "PWNED :";
+            // 
+            // txt_Type
+            // 
+            this.txt_Type.AutoSize = true;
+            this.txt_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Type.Location = new System.Drawing.Point(237, 36);
+            this.txt_Type.Name = "txt_Type";
+            this.txt_Type.Size = new System.Drawing.Size(48, 13);
+            this.txt_Type.TabIndex = 5;
+            this.txt_Type.Text = "txt_Type";
+            // 
+            // txt_status
+            // 
+            this.txt_status.AutoSize = true;
+            this.txt_status.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_status.ForeColor = System.Drawing.Color.Lime;
+            this.txt_status.Location = new System.Drawing.Point(63, 88);
+            this.txt_status.Name = "txt_status";
+            this.txt_status.Size = new System.Drawing.Size(59, 13);
+            this.txt_status.TabIndex = 7;
+            this.txt_status.Text = "CHECKM8";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(190, 63);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(45, 13);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "MODE :";
+            // 
+            // txt_mode
+            // 
+            this.txt_mode.AutoSize = true;
+            this.txt_mode.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mode.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_mode.Location = new System.Drawing.Point(236, 63);
+            this.txt_mode.Name = "txt_mode";
+            this.txt_mode.Size = new System.Drawing.Size(29, 13);
+            this.txt_mode.TabIndex = 9;
+            this.txt_mode.Text = "DFU";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(190, 88);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "CPID   :";
+            // 
+            // txt_CPID
+            // 
+            this.txt_CPID.AutoSize = true;
+            this.txt_CPID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_CPID.Location = new System.Drawing.Point(237, 88);
+            this.txt_CPID.Name = "txt_CPID";
+            this.txt_CPID.Size = new System.Drawing.Size(35, 13);
+            this.txt_CPID.TabIndex = 11;
+            this.txt_CPID.Text = "label2";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txt_CPID);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txt_mode);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.txt_status);
+            this.groupBox1.Controls.Add(this.txt_Type);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.txt_ECID);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txt_model);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(300, 117);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "iDevice Info";
+            // 
             // iBoy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -319,6 +409,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.txt_info);
             this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.progressBar1);
@@ -327,10 +418,11 @@
             this.Name = "iBoy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "iBoy - Ramdisk";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -338,7 +430,6 @@
         #endregion
 
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btn_checkdev;
         private System.Windows.Forms.Button button2;
@@ -349,18 +440,26 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Label txt_ECID;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label txt_model;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label txt_Type;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label txt_status;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label txt_mode;
         private System.Windows.Forms.Label txt_info;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btn_checkSSH;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txt_model;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label txt_ECID;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label txt_Type;
+        private System.Windows.Forms.Label txt_status;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label txt_mode;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label txt_CPID;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
