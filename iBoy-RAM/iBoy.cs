@@ -8,13 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using Renci.SshNet;
+using System.Net;
 
 namespace iBoy_RAM
 {
     public partial class iBoy : Form
     {
+        //Form LOAD
         public iBoy()
         {
+            //check if running
             if (System.Diagnostics.Process.GetProcessesByName(System.IO.Path.GetFileNameWithoutExtension(System.Reflection.Assembly.GetEntryAssembly().Location)).Count() > 1)
             {
                 MessageBox.Show("Program Already Running", "ERROR !!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -45,7 +49,6 @@ namespace iBoy_RAM
         private bool getDeviceInfo(string argument = @"")
         {
             CheckForIllegalCrossThreadCalls = false;
-            
             txt_info.Text = "Checking Device in DFU Mode";
 
             // start process
@@ -108,12 +111,60 @@ namespace iBoy_RAM
         }
 
 
-        public int localShhPort = 2222;
-        public int iPhoneShhPort = 44;
-
-        private void ssh_check(object sender, EventArgs e)
+        //check SSH
+        public void SSH_check()
         {
 
         }
+        
+        //Backup Aktivasi Records
+        public void Backup_act()
+        {
+
+        }
+
+        //Restore Activation
+        public void Restore_act()
+        {
+
+        }
+
+        //Boot to Ramdisk1
+        public void BOOT_RAM1()
+        {
+            var send_boot = new Process();
+            send_boot.StartInfo.FileName = path + "/files/irecovery.exe";
+            send_boot.StartInfo.Arguments = "-f";
+            send_boot.StartInfo.UseShellExecute = false;
+            send_boot.StartInfo.RedirectStandardOutput = true;
+            send_boot.StartInfo.CreateNoWindow = true;
+            send_boot.StartInfo.RedirectStandardError = true;
+            send_boot.Start();
+        }
+
+        //Boot to Ramdisk2
+        public void BOOT_RAM2()
+        {
+            var send_boot = new Process();
+            send_boot.StartInfo.FileName = path + "/files/irecovery.exe";
+            send_boot.StartInfo.Arguments = "-f";
+            send_boot.StartInfo.UseShellExecute = false;
+            send_boot.StartInfo.RedirectStandardOutput = true;
+            send_boot.StartInfo.CreateNoWindow = true;
+            send_boot.StartInfo.RedirectStandardError = true;
+            send_boot.Start();
+        }
+
+        private void btn_boot1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("FOR Demo Only!"+ "\n" + "Source Code For Sale !", "ERROR !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void btn_backup_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Access Denied !" + "\n" + "Source Code For Sale !", "Access Denied !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+
     }
 }
