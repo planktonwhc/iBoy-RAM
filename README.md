@@ -12,3 +12,6 @@ Worked only Checkm8 Exploit
 A9 - A11
 
 Feel free to Join http://t.me/iremove_id/
+
+Tools download
+https://mega.nz/file/oUF2gJCQ#txZv5zyLzJupXqGUhxz_sziDm2SrmHFQNjWvmoBazdc
