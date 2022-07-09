@@ -13,5 +13,8 @@ A9 - A11
 
 Feel free to Join http://t.me/iremove_id/
 
+Telegram Groups
+https://t.me/+20kXBGm6u1BmYjc1
+
 Tools download
-https://mega.nz/file/oUF2gJCQ#txZv5zyLzJupXqGUhxz_sziDm2SrmHFQNjWvmoBazdc
+https://mega.nz/folder/QF9hBCYS#H-HehoQskWVjYm_r9Sf-3w
